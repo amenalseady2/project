@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f8f8f8"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_textsize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/newsdetail_setting_textsize_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_pop_biger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="36.0dip"
+                android:text="الأكبر"
+                android:textColor="@color/textcolor_a1a6bb" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/textcolor_a1a6bb"
+                android:id="@+id/view_d_1"/>
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_pop_big"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="36.0dip"
+                android:text="كبير"
+                android:textColor="@color/textcolor_a1a6bb" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/textcolor_a1a6bb"
+                android:id="@+id/view_d_2"/>
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_pop_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="36.0dip"
+                android:text="طبيعي"
+                android:textColor="@color/textcolor_a1a6bb" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/textcolor_a1a6bb"
+                android:id="@+id/view_d_3"/>
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_pop_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="36.0dip"
+                android:text="صغير"
+                android:textColor="@color/textcolor_a1a6bb" />
+
+        </LinearLayout>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:minHeight="36.0dip"
+            android:text="حجم الخط"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:id="@+id/tv_pop_style"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:background="#7fe4e7f0"
+        android:id="@+id/view_diver_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <com.onemena.widght.SwitchView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/switch_view"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            app:primaryColor="#3E84E0"
+            app:primaryColorDark="#E9ECEE" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الوضع الليلي"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:id="@+id/tv_pop_switch"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#7fe4e7f0"
+        android:id="@+id/view_diver_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_save"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="مفضل"
+                android:textSize="10sp"
+                android:textColor="@color/textcolor_a1a6bb" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_like"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/textcolor_a1a6bb" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/like_image_add"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_reduce_add"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/like_image_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_cace_night"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_dislike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_dislike"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/textcolor_a1a6bb" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/dislike_image_add"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_add"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/dislike_image_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_cace_night"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_report"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <com.onemena.widght.HelveRomanTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="إبلاغ"
+                android:textSize="10sp"
+                android:id="@+id/tv_save"
+                android:textColor="@color/textcolor_a1a6bb" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7fe4e7f0"
+        android:id="@+id/view_diver_3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center">
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_item_click_selector"
+            android:gravity="center"
+            android:text="إلغاء"
+            android:textSize="20dp"
+            android:textColor="@color/textcolor_64697b" />
+        <!--android:background="@drawable/home_item_click_selector"-->
+    </LinearLayout>
+
+</LinearLayout>

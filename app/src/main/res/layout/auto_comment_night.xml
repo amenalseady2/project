@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="89dp"
+    android:background="@color/nightbg_1b1b1b"
+    >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:id="@+id/art_t"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:background="@drawable/common_night_bg"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <com.onemena.widght.HelveBoldTextView
+                android:gravity="right|center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:lines="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text=" بإعادة نشر بيانات صحفية دون التفرقة بين التسو"
+                android:textSize="12dp"
+                android:id="@+id/txt_articl_yuan"
+                android:textColor="@color/textcolor_707070"/>
+
+            <com.onemena.widght.NotoRegularTextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/comment_blue_btn_selector_night"
+                android:text="عرض"
+                android:gravity="center"
+                android:textColor="@color/textcolor_707070"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/art_t"
+            android:layout_marginRight="16dp"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textColor="@color/textcolor_707070"
+                android:gravity="center|right"
+                android:textSize="12dp"
+                android:layout_below="@id/art_t"
+                android:text="(٠)"/>
+            <com.onemena.widght.NotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textColor="@color/textcolor_707070"
+                android:gravity="center|right"
+                android:textSize="12dp"
+                android:layout_below="@id/art_t"
+                android:text="التعليقات"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.onemena.widght.HelveRomanTextView
+        android:id="@+id/gridview_tv"
+        android:background="@drawable/gridview_item_selector"
+        android:textColor="@color/gridview_item_color_selector"
+        android:text=""
+        android:gravity="center"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

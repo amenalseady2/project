@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/styles"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/special_img"
+        android:layout_width="710px"
+        android:layout_height="208px"
+        app:layout_auto_basewidth="height"
+        android:src="@mipmap/imgentrance" />
+
+    <TextView
+        android:id="@+id/one_img_diver"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:visibility="invisible"
+        android:layout_marginRight="32px"
+        android:layout_marginTop="10dp"
+        android:background="@color/txt_e4e7f0"
+        app:night_background="@color/txt_464646" />
+</com.zhy.autolayout.AutoLinearLayout>

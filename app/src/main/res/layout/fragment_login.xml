@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    >
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="FaceBook"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/facebok_login"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:text="Google+"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:id="@+id/twitter"
+        android:background="@color/white"
+        android:layout_height="50dp"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:hint="密码："
+        android:id="@+id/txt_password"
+        android:background="@drawable/comment_blue_btn_selector"
+        />
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="登录"
+        android:background="@drawable/comment_blue_btn_selector"
+        />
+    <TextView
+        android:id="@+id/regist_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="注册"
+        android:background="@drawable/comment_blue_btn_selector"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downpush"
+        android:id="@+id/downpush"
+        />
+
+</LinearLayout>

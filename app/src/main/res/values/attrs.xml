@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+        <attr name="defaultWidth" format="integer" />
+        <attr name="defaultHeight" format="integer" />
+    </declare-styleable>
+    <!--上下滚动广告-->
+    <declare-styleable name="autoScrollHeight">
+        <attr name="textSize" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="animDuration" format="integer" />
+        <attr name="scrollDuration" format="integer" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color" />
+        <attr name="blow_wave_color" format="color" />
+        <attr name="progress" format="integer" />
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1" />
+            <enum name="normal" value="2" />
+            <enum name="slow" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference" />
+    </declare-styleable>
+
+
+    <attr name="main_bg" format="reference|color" />
+    <attr name="indicator_bg" format="reference|color" />
+    <attr name="main_textcolor" format="reference|color" />
+    <attr name="second_bg" format="reference|color" />
+    <attr name="second_textcolor" format="reference|color" />
+
+
+</resources>

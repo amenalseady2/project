@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="49dip"
+    android:background="@color/activity_bg_F4F5F6"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/bordercolor_D8D8D8"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/toolbar_bottom"
+        >
+
+
+        <ImageView
+            android:id="@+id/bottom_share"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/details_tabbar_share" />
+        <ImageView
+            android:id="@+id/bottom_save"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/details_tabbar_save"
+           />
+        <RelativeLayout
+            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/bottom_comment"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/details_tabbar_comment" />
+            <TextView
+                android:id="@+id/indicator_count"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="14dp"
+                android:maxEms="3"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:background="@drawable/comment_red_btn_selector"/>
+        </RelativeLayout>
+        
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_detail_comment"
+            android:background="@drawable/common_white_btn_selector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="33dp"
+            android:text="   شارك برأيك..."
+            android:gravity="center|right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/txt_D2D5E1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

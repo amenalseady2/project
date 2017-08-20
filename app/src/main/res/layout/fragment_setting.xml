@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    app:night_background="@color/nightbg_1b1b1b">
+    <RelativeLayout
+        android:background="@color/main_bule"
+        app:night_background="@color/txt_234A7D"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@mipmap/details_navbar_more"
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <com.onemena.widght.HelveRomanTextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:text="@string/mycenter_setting"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            app:night_textColor="@color/textcolor_707070"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/back_iv_set"
+            android:src="@mipmap/details_navbar_back"
+            app:night_src="@mipmap/details_navbar_back_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        app:night_background="@color/txt_464646"
+        android:background="@color/color_rice5_white"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_yu"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        android:gravity="center_vertical|right">
+
+        <com.onemena.widght.SwitchView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            app:primaryColor="#3E84E0"
+            app:primaryColorDark="#E9ECEE"
+            android:id="@+id/switch_yu"/>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="14sp"
+            android:text="حفظ المقالات"
+            android:textColor="@color/textcolor_222328"
+            app:night_textColor="@color/textcolor_707070"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_rice5_white"
+        app:night_background="@color/txt_464646"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/view_feekback_set"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/arrow"
+            app:night_src="@mipmap/pc_arrow_night"/>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="14sp"
+            android:text="@string/mycenter_feedback"
+            android:textColor="@color/textcolor_222328"
+            app:night_textColor="@color/textcolor_707070"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_rice5_white"
+        app:night_background="@color/txt_464646"/>
+    <RelativeLayout
+        android:id="@+id/view_yinsi_set"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/arrow"
+            app:night_src="@mipmap/pc_arrow_night"/>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="14sp"
+            android:text="@string/mycenter_ys"
+            android:textColor="@color/textcolor_222328"
+            app:night_textColor="@color/textcolor_707070"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_rice5_white"
+        app:night_background="@color/txt_464646"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        android:gravity="center_vertical|right"
+        android:id="@+id/testjson">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:id="@+id/versionname"
+            android:textColor="@color/textcolor_a1a6bb"
+            app:night_textColor="@color/textcolor_707070"/>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            app:night_textColor="@color/nighttxt_707070"
+            android:lines="1"
+            android:text="@string/mycenter_vison"
+            android:textColor="@color/textcolor_222328" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_rice5_white"
+        app:night_background="@color/txt_464646"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            app:night_background="@color/txt_464646"
+            android:background="@color/color_rice5_white"/>
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/txt_count_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="17sp"
+            android:text="@string/mycenter_exit"
+            android:textColor="@color/txt_EB4E35"
+            app:night_textColor="@color/textcolor_935656"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_rice5_white"
+            app:night_background="@color/txt_464646"/>
+    </RelativeLayout>
+
+</LinearLayout>

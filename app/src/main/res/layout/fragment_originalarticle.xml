@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/details_navbar_more"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_newsdetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/details_navbar_back_day" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/toolbar_divider_h"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bordercolor_D8D8D8" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/mywebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/lay_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/details_failed_to_load_img"
+                app:night_src="@mipmap/details_failed_to_load_img_night"/>
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/ctv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الشبكة ضعيفة، انقر لإعادة التحميل"
+                android:textColor="@color/textcolor_a1a6bb"
+                app:night_textColor="@color/textcolor_707070"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

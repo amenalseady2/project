@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center|right">
+
+
+    <com.onemena.widght.HelveRomanTextView
+        android:id="@+id/tv_search_content"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:textSize="32px"
+        android:lines="1"
+        android:ellipsize="end"
+        app:night_textColor="@color/nighttxt_707070"
+        android:textColor="@color/black_222222"
+        android:gravity="center_vertical|right"
+        android:layout_marginRight="22px"
+      />
+    <com.onemena.widght.HelveRomanTextView
+        android:id="@+id/tv_search_content_id"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:textSize="28px"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="1"
+        android:textColor="@color/white"
+        app:night_textColor="@color/gray_cacaca"
+        android:gravity="center"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

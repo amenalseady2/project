@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arabsada.news">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--显示系统窗口-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--读取系统底层日志-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Permission for Unit Test -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--     获取手机信息权限 -->
+    <!--写入浏览器历史记录或收藏夹，但不可读取-->
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <!--读取浏览器收藏夹和历史记录-->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+
+
+    <!--允许读写系统设置项-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--允许程序禁用键盘锁-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!--下载管理器-->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!--允许程序扩展或收缩状态栏-->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+
+    <!-- GCM -->
+
+    <application
+        android:name="com.onemena.app.NewsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="false"
+        >
+
+        <activity
+            android:name="com.onemena.app.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="anaween" android:host="view"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fb435131140152015" android:host="view"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.onemena.app.activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name="com.onemena.video.view.activity.VideoNewsDetailActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.onemena.video.view.activity.VideoCommentActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name="com.onemena.app.activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.onemena.app.activity.InterestChoseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.onemena.app.activity.ShareActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!--浏览器打开的Activity-->
+        <activity android:name="com.onemena.app.activity.BrowerOpenNewsDetailActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="myapp"
+                    android:host="jp.app"
+                    android:pathPrefix="/openwith"/>
+            </intent-filter>-->
+        </activity>
+        <activity android:name="com.onemena.lock.MyLockScreenActivity"
+            android:exported="false"
+            android:taskAffinity="com.onemena.lock"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <receiver android:name="com.google.ads.conversiontracking.InstallReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.onemena.receiver.NotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.NOTIFICATION_RECEIVER_ARABSADA" />
+            </intent-filter>
+        </receiver>
+
+
+        <!--本地提醒-->
+        <receiver android:name="com.onemena.receiver.UserNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.USERNOTIFICATION_RECEIVER_ARABSADA" />
+            </intent-filter>
+        </receiver>
+
+        <!--每天的本地提醒-->
+        <receiver android:name="com.onemena.receiver.EveryDayUserNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${applicationId}.USERNOTIFICATION_EVERYDAY" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider435131140152015"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <!-- [START firebase_iid_service] -->
+        <service
+            android:name="com.onemena.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e2beabdee0106e7b9518905b549450a8d45ce0be" />
+
+
+
+        <service
+            android:name="com.onemena.service.NotificationExtenderExample"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <service android:name="com.onemena.service.BackgroundService"
+            android:process=":update"
+            android:enabled="true"/>
+        <service android:name="com.onemena.lock.LockService" />
+
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+
+
+        <!-- Branch init -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_mdvuvlFFNbGAwR6kxAWr1hedsweNnNlK"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_bmsBEjCETjLtBN9lxA3wYhjoyxfOhGnW" />
+
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+        <!-- Branch install referrer tracking -->
+        <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+
+</manifest>

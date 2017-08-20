@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">عناوين</string>
+    <string name="app_v">V 1.2.1</string>
+    <string name="app_english_name">arabsada</string>
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_video">شاهد</string>
+    <string name="tab_mine">أنا</string>
+    <string name="tab_mine_notlogin">تسجيل دخول</string>
+    <string name="tab_attention">الإهتمامات</string>
+
+    <string name="loading_dialog">يتم التحميل</string>  <!--正在加载中-->
+    <string name="delloading_dialog">يتم حذف المقالات</string>  <!--正在删除-->
+
+    <string name="click_two_exit_app" translatable="false">اضغط مرة أخرى للخروج</string>
+    <string name="pull_to_refresh">اسحب للأسفل</string>
+    <string name="release_to_refresh">اترك للتحديث</string>
+    <string name="refreshing">يتم التحميل</string>
+    <string name="refresh_succeed"> تحديث بنجاح</string><!--刷新成功-->
+    <string name="refresh_fail">فشل التحميل</string>
+    <string name="pullup_to_load">اترك للتحديث</string>    <!--上拉加载更多-->
+    <string name="pullup_to_load_d">يتم التحميل </string>    <!--上拉加载更多-->
+    <string name="release_to_load">اترك للتحديث</string> <!--释放立即加载-->
+    <string name="loading">اترك للتحديث</string>  <!--正在加载...-->
+    <string name="loading_d">يتم التحميل </string>  <!--正在加载...-->
+    <string name="load_succeed">التحميل بنجاح</string><!--加载成功-->
+    <string name="load_fail">فشل التحميل</string> <!--加载失败-->
+    <string name="attention">مُتابع</string> <!--已关注-->
+    <string name="notattention">متابعة</string> <!--未关注-->
+    <string name="thousand">ألف</string> <!--千-->
+    <string name="million">مليون</string> <!--百万-->
+    <string name="video_play_count">مشاهدة</string> <!--播放次数-->
+    <string name="correlation_video">فيديوهات</string> <!--相关视频-->
+    <string name="copy_link">نسخ الرابط</string> <!---->
+    <string name="SMS">SMS</string> <!--SMS-->
+    <string name="Email">Email</string> <!--Email-->
+    <string name="Google">Google+</string> <!--Email-->
+    <string name="Twitter">Twitter</string> <!--Twitter-->
+    <string name="Facebook">Facebook</string> <!--Email-->
+    <string name="WhatsApp">WhatsApp</string> <!--WhatsApp-->
+    <string name="Uninterested"> لا يهمني</string> <!--不感兴趣-->
+    <string name="save">save</string> <!--收藏-->
+    <string name="report">إبلاغ</string> <!--举报-->
+    <string name="offlinetitle">تصفح من دون إنترنت</string> <!--离线下载-->
+    <string name="download">تحميل</string> <!--离线下载-->
+    <string name="downloading">يتم التحميل</string> <!--正在下载-->
+    <string name="download_finish">انتهى التحميل</string> <!--下载完成-->
+    <string name="download_txt_1">لا يوجد أي أخبار محملة للتصفح من دون إنترنت</string> <!--下载文本-->
+    <string name="download_txt_2">يمكنك النقر على زر "تحميل" للبدأ بتحميل الأخبار للتصفح من دون اتصال</string> <!--下载文本-->
+    <string name="download_txt_3">نقوم بتحميل المقالات حتى تتمكن من القراءة في حال عدم توفر إتصال بالإنترنت </string> <!--下载文本-->
+    <string name="download_btn">تحميل</string> <!--下载按钮-->
+    <string name="collection_success">تم الحفظ بالمفضلة</string> <!--收藏成功-->
+    <string name="collection_cancel">تم إلغاء المفضلة</string> <!--取消收藏-->
+    <string name="edit">تحرير</string> <!--编辑-->
+    <string name="cancel">إلغاء</string> <!--取消-->
+    <string name="delete">حذف</string> <!--删除-->
+    <string name="my_collection">الأخبار المحفوظة</string> <!--我的收藏-->
+    <string name="no_hava_collection">لا يوجد محتوى محفوظ</string> <!--暂无收藏内容-->
+    <string name="no_hava_data">لا يوجد المزيد من الأخبار</string> <!--暂无更多数据-->
+    <string name="loading_">جار التحميل…</string> <!--正在加载...-->
+    <string name="mycenter_setting">الإعدادات</string> <!--个人中心——设置-->
+    <string name="mycenter_night">الوضع الليلي</string> <!--个人中心——夜间模式-->
+    <string name="mycenter_day">الوضع الصباحي</string> <!--个人中心——白天模式-->
+    <string name="mycenter_save">االأخبار المحفوظة</string> <!--个人中心——收藏-->
+    <string name="mycenter_feedback">أسئلة وإقتراحات</string> <!--个人中心——意见反馈-->
+    <string name="mycenter_ys">سياسة الخصوصية</string> <!--个人中心——意见反馈-->
+    <string name="mycenter_vison">النسخة الحالية</string> <!--个人中心——版本号-->
+    <string name="mycenter_exit"> تسجيل الخروج</string> <!--设置退出-->
+    <string name="login_success">تم التسجيل</string> <!--登录成功-->
+    <string name="login_fail">فشل التسجيل</string> <!--登录失败-->
+    <string name="login_exitsuccess">نجح تسجيل الخروج</string> <!--退出登录成功-->
+    <string name="logout_thirdfail">فشل الاتصال بمخدم الطرف الثالث</string> <!-- 三方授权失败-->
+
+
+    <string name="play_button">Play button</string>
+    <string name="popwinright">لا يهمني</string><!-- 我不喜欢-->
+    <string name="popwinleft">سبب الإخفاء</string><!-- 不喜欢的原因-->
+    <string name="null_time">0:00</string>
+    <string name="open_video_in_youtube">Open video in YouTube</string>
+    <string name="full_screen_button">Full screen button</string>
+    <string name="update_notice_finish">download finish</string>
+    <string name="update_notice_nomemory">no memory</string>
+    <string name="update_notice_error">error</string>
+
+    <!--列表时间规则-->
+    <string name="only_just">الان</string>
+    <string name="minute_before"> دقائق </string>
+    <string name="hour_before">ساعات</string>
+    <string name="before"> منذ </string>
+    <string name="yesterday">أمس</string>
+    <string name="the_day_before_yesterday">أول أمس</string>
+    <string name="day_before"> يوم </string>
+
+
+    <string name="facebook_app_id">435131140152015</string>
+    <string name="fb_login_protocol_scheme">435131140152015</string>
+    <string name="feedback_link">feedback@arabsada.com</string>
+    <string name="feedback_txt">إقتراحاتك هي سبيل تقدمنا وتطورنا</string>
+    <string name="server_client_id">534139034128-hp0s4496d2p3c4sghfic19jpsgio6ith.apps.googleusercontent.com</string>
+
+    <string name="android_client_id">984836941865-ncp4191nht98abq6i21s8nn05g86llfg.apps.googleusercontent.com</string>
+
+
+
+    <string name="notification_first">الآن أصبحت أحداث العالم بين يديك الكثير من الأخبار والمواضيع الشيقة بإنتظارك</string>
+    <string name="notification_two">تم إضافة المزيد من المواضيع الشيقة بإنتظارك،افتح التطبيق لتحصل على آخر المواضيع الجديدة</string>
+    <string name="comment_back">عرض</string>
+    <string name="comment_count">التعليقات</string>
+    <string name="choose_user">حدد إهتماماتك ببساطة</string>
+    <string name="pop_clean_btn_cancel">إلغاء</string>
+    <string name="pop_clean_btn_sure">تأكيد</string>
+    <string name="pop_clean_des">هل أنت متأكد من تنظيف الذاكرة المختزنة؟ سيتم حذف كل تواريخ القراءة المسجلة بالإضافة للمحتوى المحفوظ للقراءة من دون اتصال</string>
+    <string name="pop_clean_title">إفراغ الذاكرة</string>
+    <string name="attention_title">إهتماماتي</string>
+    <string name="copy_success">تم نسخ الرابط</string>
+    <string name="emai_title">مشاركة من تطبيق عناوين </string>
+    <string name="click_look_more">اقرأ المزيد</string>
+    <string name="find_new_contant">اضغط لمشاهدة آخر الأخبار</string>
+    <string name="local_good_title"> مقالات مميزة</string>
+    <string name="we_can_show_local_news">لقد قمنا بإعداد بعض الأخبار والمقالات المميزة للقراءة من دون اتصال</string>
+    <string name="please_check_your_network">يرجى التحقق من الشبكة</string>
+    <string name="gold_task_today_notcomplete">أهداف غير مكتملة</string>
+    <string name="gold_task_today_complete">تم إنجاز أهداف اليوم</string>
+    <string name="pc_gold_task">الأهداف</string>
+    <string name="pc_clean_data">إفراغ الذاكرة</string>
+    <string name="pc_changsize">إعدادات الخط</string>
+    <string name="pc_faq">أسئلة وإقتراحات</string>
+    <string name="txt_popwin_login">يمكن التسجيل بإحدى الطرق التالية</string>
+    <string name="txt_gold_task_login_fb">الدخول بحساب الفيس بوك</string>
+    <string name="txt_gold_task_login_tw">الدخول بحساب التويتر</string>
+    <string name="txt_gold_task_login_gl">الدخول بحساب الجيميل</string>
+    <string name="task_detail_title">تفاصيل الهدف</string>
+    <string name="task_list_title">الأهداف</string>
+    <string name="详情页底部分享标题">شارك الخبر مع أصدقائك</string>
+    <string name="来自anaween的分享">  تم مشاركته من تطبيق عناوين </string>
+    <string name="fb分享id">scheme=fb435131140152015</string>
+    <string name="离线下载按钮">اضغط للتحميل</string>
+    <string name="离线下载提示">تقوم بتحميل المقالات على الجهاز حتى تتمكن من القراءة حتى عند عدم وجود إتصال بالإنترنت!</string>
+    <string name="离线选中条数">اختر القسم الذي تريده</string>
+    <string name="离线底部小手文案">للمزيد من المقالات! اضغط للتحميل!</string>
+    <string name="专题考试">专题</string>
+    <string name="金币商城">متجر الأهداف </string>
+    <string name="更新按钮">تحديث</string>
+
+
+    <string name="n_20101">إضافات و تحديثات كثيرة الآن مع عناوين .. لا تضيع الفرصة .</string>
+    <string name="n_20102">عسى غيابك خير.. عناوين افتقدتك قارئنا المميز .. لنعاود التواصل</string>
+    <string name="n_20103">هل سمعت بأخر أسرار  مشاهيرك و نجومك المفضلين ؟ .. لا تفوتها</string>
+    <string name="n_20104">محتارة بطبخة اليوم ؟ من اليوم لا حيرة مع عناوين، تعالي و أختاري احلى الطبخات من كل مطابخ العالم.</string>
+    <string name="n_20105">قليلون هم من نسعى اليهم بعد غيابهم .. أنت واحد منهم .. لنعاود التواصل</string>
+    <string name="n_20106">أخبارك أنت الي تختارها مش حد يختارها لك أختار، تعال وشاهد فئات جديدة</string>
+    <string name="n_20107">هل زرت هذة الاماكن من قبل؟ سارع بمعرفة كل العروضات السياحية.</string>
+    <string name="n_20108">هل شاهدت اخرصيحات الموضة والمكياج ؟ تعال وشاهد.</string>
+
+    <string name="n_10101">هل فاتتك أخر الأخبار قم بمتابعتها الان .</string>
+    <string name="n_10102">أخبار الترفية والمشاهير والعربية والعالمية... تابع أخر أخبار اليوم.</string>
+    <string name="n_10103">ذا لم تكن موجود خلال اربعة وعشرون ساعة الماضية فقد فاتك الكثير...تعال وتابع ما فاتك.</string>
+    <string name="n_10104">جمعنا لك اليوم اهم اخبار الترفيه تعال واستمتع معنا .</string>
+
+    <string name="搜索历史">سجل التاريخ</string>
+    <string name="热门搜索">اختيارات مميزة</string>
+    <string name="搜索结果">شاهد</string>
+    <string name="没有搜索结果">لا يوجد نتائج للبحث</string>
+    <string name="界面404点击刷新">انقر على الشاشة للتحميل من جديد</string>
+    <string name="点击加载数据">الشبكة ضعيفة، انقر لإعادة التحميل</string>
+    <string name="网络异常">الشبكة ضعيفة</string>
+    <string name="推荐文章">توصية ممتازة</string>
+    <string name="refresh_fine_news">اقرأ المزيد</string>
+    <string name="clear_read_article">اضغط لتحميل مقالات أكثر، هل تريد التحميل؟</string>
+    <string name="no_network">فشل التحميل</string>
+    <string name="no_refresh_times">لا يوجد المزيد اليوم</string>
+    <string name="fine_news_cancel">الغاء</string>
+    <string name="fine_news_confirm">نعم</string>
+
+    <string name="pc_notifcaion">المطالعة السريعة للأشعارات</string>
+    <string name="lock_switch">المطالعة السريعة للمقالات</string>
+
+</resources>

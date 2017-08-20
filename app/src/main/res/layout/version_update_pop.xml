@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="560px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imgupdata"
+        android:orientation="vertical"
+        android:padding="48px">
+
+        <com.onemena.widght.HelveBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:gravity="center"
+            android:text="رسالة التحديث"
+            android:textColor="@color/textcolor_222222"
+            android:textSize="40px" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_current_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/textcolor_222222" />
+
+        <com.onemena.widght.HelveBoldTextView
+            android:layout_marginTop="20px"
+            android:id="@+id/tv_new_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textSize="28px"
+            android:textColor="@color/textcolor_222222" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textSize="28px"
+            android:text="الرجاء تحديث النسخة، النسخة الأحدث فيها تحسينات أكثر"
+            android:textColor="@color/textcolor_222222" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px">
+
+            <com.onemena.widght.HelveBoldTextView
+                android:id="@+id/tv_commit_force"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:background="@drawable/common_main_blue_btn_"
+                android:gravity="center"
+                android:text="@string/更新按钮"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updata_lay">
+
+                <com.onemena.widght.HelveBoldTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0px"
+                    android:layout_height="72px"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_e8_updata_selector"
+                    android:gravity="center"
+                    android:text="ذكرني لاحقاً"
+                    android:textColor="@color/txt_999999"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="32px"
+                    android:layout_height="wrap_content" />
+
+                <com.onemena.widght.HelveBoldTextView
+                    android:id="@+id/tv_commit"
+                    android:layout_width="0px"
+                    android:layout_height="72px"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_main_blue_btn_"
+                    android:gravity="center"
+                    android:text="@string/更新按钮"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

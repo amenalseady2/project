@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:background="@color/white"
+        app:night_background="@color/nightbg_252525"
+        app:layout_auto_basewidth="height"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/checkbox_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/download_checkbox" />
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/item_title_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="88px"
+            android:gravity="center_vertical"
+            android:text="اتصال"
+            android:textColor="@color/textcolor_64697b"
+            app:night_textColor="@color/textcolor_707070"
+            android:textSize="30px" />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32px"
+            android:gravity="center_vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/item_img_offline"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/txt_e4e7f0"
+            app:night_background="@color/txt_464646"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:night_background="@color/nightbg_252525">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/activity_bg_F4F5F6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_auto_basewidth="height"
+        app:night_background="@color/nightbg_1b1b1b">
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_"
+            android:textSize="32px"
+            app:night_textColor="@color/blue_night" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32px"
+            android:background="@drawable/shape_search_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6px"
+            android:paddingRight="6px"
+            app:night_background="@drawable/shape_search_edit_night">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:padding="12px"
+                android:src="@drawable/icon_close_putin"
+                android:visibility="gone"
+                app:layout_auto_basewidth="height|padding"
+                app:night_src="@drawable/icon_close_putin_night" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="بحث"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="2"
+                android:textColor="@color/black_222222"
+                android:textColorHint="@color/gray_999999"
+                android:textSize="28px"
+                app:night_textColor="@color/nighttxt_707070" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:padding="12px"
+                android:src="@drawable/icon_search_putin"
+                app:layout_auto_basewidth="height|padding"
+                app:night_src="@drawable/icon_search_putin_night" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_e8e8e8"
+        app:night_background="@color/txt_464646" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <com.onemena.widght.HelveRomanTextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="32px"
+                android:gravity="center_vertical"
+                android:text="@string/热门搜索"
+                android:textColor="@color/gray_999999"
+                android:textSize="28px"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="32px"
+                android:background="@color/gray_e3e3e3"
+                app:night_background="@color/txt_464646" />
+
+            <com.onemena.widght.RTLGridView
+                android:id="@+id/lv_hot"
+                style="@style/ListView2"
+                android:numColumns="2"
+                android:paddingRight="18px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_history"
+            android:layout_below="@id/ll_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:gravity="center_vertical"
+                app:layout_auto_basewidth="height">
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="52px"
+                    android:layout_height="52px"
+                    android:layout_marginLeft="22px"
+                    android:padding="10px"
+                    android:src="@drawable/icon_delete_search"
+                    app:layout_auto_basewidth="height|padding"
+                    app:night_src="@drawable/icon_delete_search_night" />
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32px"
+                    android:text="@string/搜索历史"
+                    android:textColor="@color/gray_999999"
+                    android:textSize="28px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="32px"
+                android:background="@color/gray_e3e3e3"
+                app:night_background="@color/txt_464646" />
+
+            <ListView
+                android:id="@+id/lv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"></ListView>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.onemena.widght.HelveRomanTextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="32px"
+                android:gravity="center_vertical"
+                android:text="@string/搜索结果"
+                android:textColor="@color/gray_999999"
+                android:textSize="32px"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="32px"
+                android:background="@color/gray_e3e3e3"
+                app:night_background="@color/txt_464646" />
+
+            <com.onemena.app.refresh.PullToRefreshLayout
+                android:id="@+id/refreashLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_bar">
+
+                <include layout="@layout/refresh_head" />
+
+                <com.onemena.app.refresh.PullableListView
+                    android:id="@+id/lv_search_result"
+                    style="@style/ListView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null" />
+
+                <include layout="@layout/load_more" />
+
+            </com.onemena.app.refresh.PullToRefreshLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/lay_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:night_background="@color/nightbg_252525">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/imgsearch_nodata"
+                app:night_src="@mipmap/imgsearch_nodata_night" />
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_no_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="@string/没有搜索结果"
+                android:textColor="@color/gray_999999"
+                android:textSize="28px"
+                app:night_textColor="@color/nighttxt_707070" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

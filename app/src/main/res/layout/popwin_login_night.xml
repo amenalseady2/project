@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/txt_464646">
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/txt_popwin_login"
+            android:textColor="@color/textcolor_707070"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/iconclose_night" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/nightbg_252525"
+        android:orientation="vertical">
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_facebook_login"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="29dp"
+            android:layout_weight="1"
+            android:background="@drawable/gold_task_login_fb_night"
+            android:drawablePadding="13dp"
+            android:drawableRight="@mipmap/iconbtnfacebook_night"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:text="@string/txt_gold_task_login_fb"
+            android:textColor="@color/txt_676767"
+            android:textSize="16dp" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_tiwwer_login"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/gold_task_login_tw_nigth"
+            android:drawablePadding="13dp"
+            android:drawableRight="@mipmap/iconbtntwtter_night"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:text="@string/txt_gold_task_login_tw"
+            android:textColor="@color/txt_676767"
+            android:textSize="16dp" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_google_login"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="27dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/gold_task_login_gl_night"
+            android:drawablePadding="13dp"
+            android:drawableRight="@mipmap/iconbtngoogle_night"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:text="@string/txt_gold_task_login_gl"
+            android:textColor="@color/txt_676767"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

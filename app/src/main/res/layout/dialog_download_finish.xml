@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="570px"
+        android:layout_height="200px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.arabsada.news.widght.ContentTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:text="@string/download_finish"
+            android:textColor="@color/txt_464646"
+            android:textSize="16dp" />
+
+        <com.arabsada.news.widght.ContentBondTextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:text="@string/download_finish"
+            android:textColor="@color/txt_3e84e0"
+            android:textSize="18dp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

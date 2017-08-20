@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textview_padding_lr" >6dp</dimen>
+    <dimen name="imageview_padding_lr" >10dp</dimen>
+    <dimen name="textview_padding_tb" >4dp</dimen>
+    <dimen name="textview_padding_bt" >2dp</dimen>
+    <dimen name="title_image_hight" >33dp</dimen>
+</resources>

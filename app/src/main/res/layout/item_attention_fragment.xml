@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/item_attention_lay">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="16dp">
+            <com.onemena.widght.HelveRomanTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:textColor="@color/textcolor_222328"
+                android:text="الإهتمامات"
+                android:id="@+id/txt_atten_com"
+                />
+            <com.onemena.widght.NotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/textcolor_a1a6bb"
+                android:text="الإهتمامات"
+                android:id="@+id/txt_atten_num"
+                android:layout_below="@id/txt_atten_com"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="56dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:id="@+id/item_btn_attention"
+                    android:background="@drawable/attention_item_selector"
+                    android:textColor="@color/attention_item_color_selector"
+                    android:text="متابعة"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            fresco:roundedCornerRadius="4dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/txt_e4e7f0"
+        android:id="@+id/attention_diver"/>
+    
+</LinearLayout>

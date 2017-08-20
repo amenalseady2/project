@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/details_navbar_more"
+            android:visibility="invisible" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/title_report"
+            android:text="إبلاغ"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/details_navbar_back_night" />
+
+    </LinearLayout>
+
+    <com.onemena.widght.HelveRomanTextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/activity_bg_f5"
+        android:gravity="center_vertical"
+        android:paddingRight="16dp"
+        android:textSize="12sp"
+        android:text="الرجاء اختيار السبب (يمكن الاختيار المتعدد)"
+        android:textColor="@color/textcolor_a1a6bb" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="محتوى إباحي أو مبتذل"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="غير واقعي"
+                    android:textSize="15sp"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="إعلان"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="عنوان غير مطابق للمحتوى"
+                    android:textColor="@color/textcolor_64697b" />
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="محتوى مكرر، أو قديم"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox5"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="أخطاء إملائية أو كتابية"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox6"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="خطأ بالتنضيد، سطور مخلوطة"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox7"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="أسباب أخرى"
+                    android:textColor="@color/textcolor_64697b" />
+
+                <CheckBox
+                    android:id="@+id/checkbox8"
+                    style="@style/CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <EditText
+        android:id="@+id/et_report"
+        android:background="@drawable/edittext_f5_bg"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:minLines="2"
+        android:gravity="top|right"
+        android:textColor="#7f64697B"
+        android:textColorHint="#D2D3E1"
+        android:textSize="12dp"
+        android:hint="الرجاء شرح سبب الإبلاغ أو الخطأ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.onemena.widght.HelveRomanTextView
+        android:id="@+id/tv_report"
+        android:text="إرسال"
+
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/report_red_btn_selector"
+        android:gravity="center" />
+
+</LinearLayout>

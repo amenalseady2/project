@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="72dp">
+
+    <LinearLayout
+        android:id="@+id/web_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/ll_dislike"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_video_like"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/textcolor_a1a6bb"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/details_icon_dislike" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_like"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_video_like"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/textcolor_a1a6bb"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/details_icon_like" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dislike_iv_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_cacel"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/dislike_iv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_reduce_add"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="128dp">
+
+            <ImageView
+                android:id="@+id/like_iv_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_cacel"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/like_iv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/details_add"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

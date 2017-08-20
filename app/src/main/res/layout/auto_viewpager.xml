@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.onemena.widght.AutoScrollViewPager
+        android:id="@+id/auto_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/auto_viewpager"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="#7F000000">
+
+        <com.custom.indictor.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="3dp"
+            app:fillColor="@color/white"
+            app:pageColor="#7fffffff" />
+
+        <com.onemena.widght.HelveBoldTextView
+            android:id="@+id/auto_vp_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="51dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

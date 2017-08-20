@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5" >
+
+    <RelativeLayout
+        android:id="@+id/head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        >
+      <!--  <ImageView
+            android:id="@+id/pull_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="@mipmap/pull_icon_big" />-->
+        <ImageView
+            android:id="@+id/pull_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:background="@mipmap/loading1" />
+
+        <ImageView
+            android:id="@+id/refreshing_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true" >
+
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/pull_to_refresh"
+                android:textColor="@color/black_text"
+                 />
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/black_text"
+                 />
+            <ImageView
+                android:id="@+id/state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/state_tv"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

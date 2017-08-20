@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_home_fragment">
+
+    <TextView
+        android:id="@+id/txt_time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24px"
+        android:text="البيت"
+        android:textColor="#A1A6BB"
+        android:textSize="12sp"
+        />
+
+
+
+    <com.onemena.widght.NotoRegularTextView
+        android:id="@+id/txt_com_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8px"
+        android:text="منصب"
+        android:textColor="#A1A6BB"
+        android:textSize="12sp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_com_1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="17dp"
+        android:src="@mipmap/home_from"
+        fresco:roundAsCircle="true" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:background="@color/main_bule"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:visibility="gone"
+            android:src="@mipmap/details_navbar_more"
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/title_newsdetail"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:text="أسئلة وإقتراحات"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:src="@mipmap/details_navbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/feedbackemail"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_link"
+            android:layout_marginTop="8dp"
+            android:textSize="17dp"
+            android:textColor="@color/textcolor_64697b"
+            android:gravity="center"
+            />
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_txt"
+            android:layout_marginTop="8dp"
+            android:textSize="17dp"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:gravity="center"
+            />
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="إرسال"
+            android:layout_marginTop="24dp"
+            android:textSize="17dp"
+            android:textColor="@color/bg_second_dark"
+            android:background="@drawable/common_main_blue_btn_"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/txt_feedback_email"
+            />
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الأسئلة المتداولة"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textcolor_a1a6bb"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_rice5_white"
+        />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_back"
+        android:divider="@null"
+        style="@style/ListView">
+    </ListView>
+
+</LinearLayout>

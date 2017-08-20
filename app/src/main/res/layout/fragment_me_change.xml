@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/home_lay_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/lay_userbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <com.onemena.widght.NotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="32px"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="64px"
+                        android:background="@mipmap/pc_profile"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@mipmap/pc_profile"
+                        fresco:roundAsCircle="true" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/lay_login_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16px">
+
+                        <ImageView
+                            android:id="@+id/img_login_gl"
+                            android:layout_width="0dp"
+                            android:layout_height="64px"
+                            android:layout_marginLeft="30px"
+                            android:layout_weight="1"
+                            android:src="@mipmap/my_btn_gp"
+                            fresco:night_src="@mipmap/my_btn_gp_night"/>
+
+                        <ImageView
+                            android:id="@+id/img_login_fb"
+                            android:layout_width="0dp"
+                            android:layout_height="64px"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginRight="15px"
+                            android:layout_weight="1"
+                            android:src="@mipmap/my_btn_fb"
+                            fresco:night_src="@mipmap/my_btn_fb_night"
+                            />
+
+                        <ImageView
+
+                            android:id="@+id/img_login_tw"
+                            android:layout_width="0dp"
+                            android:layout_height="64px"
+                            android:layout_marginRight="30px"
+                            android:layout_weight="1"
+                            android:src="@mipmap/my_btn_tw"
+                            fresco:night_src="@mipmap/my_btn_tw_night"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="52px"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/lay_setting"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/my_set"
+                                fresco:night_src="@mipmap/my_set_night"
+                                android:id="@+id/img_myset"/>
+
+                            <com.onemena.widght.HelveRomanTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8px"
+                                android:text="@string/mycenter_setting"
+                                android:id="@+id/tv_myset"
+                                android:textSize="12sp"/>
+                        </com.zhy.autolayout.AutoLinearLayout>
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/lay_dayornight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/my_night"
+                                    fresco:night_src="@mipmap/my_night_night"
+                                    android:id="@+id/img_mynight"/>
+
+                                <com.onemena.widght.HelveRomanTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8px"
+                                    android:text="@string/mycenter_night"
+                                    android:id="@+id/tv_mynight"
+                                    android:textSize="12sp"/>
+                            </com.zhy.autolayout.AutoLinearLayout>
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="64px"
+                                android:background="@color/txt_e4e7f0"
+                                android:id="@+id/txt_s2"
+                                android:layout_alignParentLeft="true"/>
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="64px"
+                                android:background="@color/txt_e4e7f0"
+                                android:id="@+id/txt_s1"
+                                android:layout_alignParentRight="true"/>
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/lay_save"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/my_save"
+                                android:id="@+id/img_mysave"
+                                fresco:night_src="@mipmap/my_save_night"/>
+
+                            <com.onemena.widght.HelveRomanTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8px"
+                                android:text="@string/mycenter_save"
+                                android:id="@+id/tv_mysave"
+                                android:textSize="12sp"/>
+                        </com.zhy.autolayout.AutoLinearLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/lay_userbg_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="48px"
+                        android:background="@color/color_f8f8f8">
+
+                        <TextView
+                            android:id="@+id/tv_userbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="32px"
+                            android:background="@color/white" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/home_lay_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="208px"
+                    android:background="@color/main_bule">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:layout_alignParentBottom="true">
+
+                        <com.onemena.widght.waveview.WaveView xmlns:wave="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/wave_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_bule"
+                            wave:above_wave_color="#ffffffff"
+                            wave:blow_wave_color="#88ffffff"
+                            wave:progress="10"
+                            wave:wave_height="middle"
+                            wave:wave_hz="slow"
+                            wave:wave_length="large" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="52px"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40px"
+                        android:background="@mipmap/pc_profile"
+                        fresco:placeholderImage="@mipmap/pc_profile"
+                        fresco:roundAsCircle="true" />
+                </com.zhy.autolayout.AutoLinearLayout>
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_task_gold"
+                    android:layout_width="128px"
+                    android:layout_height="52px"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="52px"
+                    android:layout_marginRight="32px"
+                    android:background="@drawable/gold_count_shape"
+                    fresco:night_background="@drawable/gold_count_shape_night"
+                    android:gravity="center|right">
+                    <TextView
+                        android:id="@+id/tv_gold_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20px"
+                        android:textColor="@color/white"
+                        fresco:night_textColor="@color/nighttxt_707070"
+                        android:textSize="28px"
+                        android:text="5"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_gold"
+                        fresco:night_src="@mipmap/icon_yellow_coin_night"
+                        android:layout_marginRight="6px"
+                        />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/home_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_gold_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/img_count_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/arrow"
+                        fresco:night_src="@mipmap/pc_arrow_night"/>
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_not_complete"
+                        android:layout_width="wrap_content"
+                        android:textSize="30px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="70px"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textcolor_a1a6bb" />
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_gold_task"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/pc_gold_task"
+                        android:textColor="@color/textcolor_222328" />
+
+                    <TextView
+                        android:id="@+id/txt_gold_task_point"
+                        android:layout_width="16px"
+                        android:layout_height="16px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:layout_toLeftOf="@id/txt_count_gold_task"
+                        android:background="@drawable/point_shape"
+                        fresco:night_background="@drawable/point_shape_night" />
+                    <ImageView
+                        android:id="@+id/img_count_gold_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/pc_gold_task_img"
+                        fresco:night_src="@mipmap/pc_gold_task_img_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_pdiv_gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_gold_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/img_count_gold_market_ent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/arrow"
+                        fresco:night_src="@mipmap/pc_arrow_night"/>
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_gold_market"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/金币商城"
+                        android:textColor="@color/textcolor_222328" />
+                    <TextView
+                        android:id="@+id/txt_gold_market_point"
+                        android:layout_width="16px"
+                        android:layout_height="16px"
+                        android:background="@drawable/point_shape"
+                        android:layout_toLeftOf="@id/txt_count_gold_market"
+                        android:layout_centerVertical="true"
+                        fresco:night_background="@drawable/point_shape_night"
+                        android:layout_marginRight="30px"
+                        />
+                    <ImageView
+                        android:id="@+id/img_count_gold_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/pc_gold_market"
+                        fresco:night_src="@mipmap/pc_gold_market_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_pdiv_gold_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/view_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <com.onemena.widght.SwitchView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="32px"
+                        app:primaryColor="#3E84E0"
+                        app:primaryColorDark="#E9ECEE"
+                        android:id="@+id/switch_lock"/>
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_7"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/lock_switch"
+                        android:textColor="@color/textcolor_222328" />
+
+                    <ImageView
+                        android:id="@+id/img_count_7"
+                        android:layout_width="29dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/icon_list_lockread"
+                        fresco:night_src="@drawable/icon_list_lockread_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <TextView
+                    android:id="@+id/txt_pdiv_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_clearcache"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <TextView
+                        android:id="@+id/txt_cachesize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="32px"
+                        android:gravity="center_vertical"
+                        android:text="0.7M"
+                        android:textColor="@color/textcolor_a1a6bb" />
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_3"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/pc_clean_data"
+                        android:textColor="@color/textcolor_222328" />
+
+                    <ImageView
+                        android:id="@+id/img_count_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/pc_clean"
+                        fresco:night_src="@mipmap/pc_clean_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_pdiv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/view_font_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/text_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="32px"
+                        android:gravity="center_vertical"
+                        android:text="شخصيت"
+                        android:textSize="15sp"
+                        android:textColor="@color/textcolor_a1a6bb" />
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_4"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/pc_changsize"
+                        android:textColor="@color/textcolor_222328" />
+
+                    <ImageView
+                        android:id="@+id/img_count_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/pc_fontsize"
+                        fresco:night_src="@mipmap/pc_fontsize_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_pdiv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/view_feekback"
+                    android:layout_width="match_parent"
+                    android:layout_height="104px"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/img_count_5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="32px"
+                        android:gravity="center_vertical"
+                        fresco:night_src="@mipmap/pc_arrow_night"
+                        android:src="@mipmap/arrow" />
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:id="@+id/txt_count_5"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120px"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/pc_faq"
+                        android:textColor="@color/textcolor_222328" />
+
+                    <ImageView
+                        android:id="@+id/img_count_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32px"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/pc_advice"
+                        fresco:night_src="@mipmap/pc_advice_night"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_pdiv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="120px"
+                    android:background="@color/color_rice5_white" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

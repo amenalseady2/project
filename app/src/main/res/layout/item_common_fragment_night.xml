@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nightbg_252525">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginTop="16dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/img_common_t"
+            fresco:roundAsCircle="true"
+            />
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/txt_common_name"
+            android:textSize="16dp"
+            android:textColor="@color/textcolor_707070"
+            android:text="Curise.Wang"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="56dp"
+            android:layout_below="@id/txt_common_name"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_comment_locatin"
+                android:textColor="@color/textcolor_707070"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Egpyt"
+                android:textSize="10sp"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/details_comment_location_night"/>
+            <TextView
+                android:id="@+id/txt_comment_data"
+                android:textColor="@color/textcolor_707070"
+                android:drawablePadding="4dp"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-10-11"
+                android:layout_marginTop="4dp"
+                android:drawableRight="@mipmap/details_comment_time_night"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <com.onemena.widght.HelveRomanTextView
+        android:id="@+id/txt_comment_contxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:textSize="14sp"
+        android:textColor="@color/textcolor_707070"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="تتضاءل عمليات التحكم بالجودة. تقوم عشرات المدونات (كما الإعلام المطبوع) ببساطة بإعادة نشر بيانات صحفية دون التفرقة بين التسويق والنقد المستقل"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/txt_464646"
+        android:layout_marginRight="16dp" />
+
+</LinearLayout>

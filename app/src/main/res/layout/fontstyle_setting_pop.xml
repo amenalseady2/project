@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.onemena.widght.HelveBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center"
+            android:text="إعدادات الخط"
+
+            />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="صغير"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor_64697b"
+                android:button="@null"
+                android:drawableRight="@drawable/btn_radio_selector"
+                android:gravity="left|center"
+                android:id="@+id/sty_1"
+                android:layout_gravity="center"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sty_2"
+                android:text="طبيعي"
+                android:textSize="16sp"
+                android:button="@null"
+                android:textColor="@color/textcolor_64697b"
+                android:drawableRight="@drawable/btn_radio_selector"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:layout_marginTop="24dp"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" كبير"
+                android:layout_gravity="center"
+                android:id="@+id/sty_3"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor_64697b"
+                android:button="@null"
+                android:drawableRight="@drawable/btn_radio_selector"
+                android:gravity="center|left"
+                android:layout_marginTop="24dp"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الأكبر"
+                android:button="@null"
+                android:drawableRight="@drawable/btn_radio_selector"
+                android:layout_gravity="center"
+                android:id="@+id/sty_4"
+                android:gravity="center|left"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor_64697b"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إلغاء"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/textcolor_64697b"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

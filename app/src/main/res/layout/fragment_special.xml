@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/special_web"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_error_h5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:night_background="@color/nightbg_252525">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/details_failed_to_load_img"
+            app:night_src="@mipmap/details_failed_to_load_img_night" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/点击加载数据"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:textSize="18dp"
+            app:night_textColor="@color/textcolor_707070" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_loading_h5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:night_background="@color/nightbg_252525">
+    </com.zhy.autolayout.AutoLinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@mipmap/details_navbar_more"
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <com.onemena.widght.HelveRomanTextView
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_iv_special"
+            android:src="@mipmap/icon_back_kao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

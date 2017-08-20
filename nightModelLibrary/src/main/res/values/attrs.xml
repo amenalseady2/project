@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NightOwl_View">
+        <attr name="night_background" />
+        <attr name="night_alpha" />
+    </declare-styleable>
+
+    <declare-styleable name="NightOwl_TextView">
+        <attr name="night_textColor" />
+        <attr name="night_textColorHint" />
+    </declare-styleable>
+
+    <declare-styleable name="NightOwl_ImageView">
+        <attr name="night_src" />
+    </declare-styleable>
+
+    <declare-styleable name="NightOwl_Theme">
+        <attr name="night_colorPrimary" format="color|reference" />
+        <attr name="night_colorPrimaryDark" format="color|reference" />
+        <attr name="night_colorAccent" format="color|reference" />
+        <attr name="night_navigationBarColor" format="color|reference" />
+        <attr name="night_statusBarColor" format="color|reference" />
+        <attr name="night_additionThemeDay" format="reference" />
+        <attr name="night_additionThemeNight" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NightOwl_ListView">
+        <attr name="night_listSelector" format="color|reference" />
+        <attr name="night_divider" format="color|reference" />
+    </declare-styleable>
+
+    <!--复用属性-->
+    <attr name="night_background" format="color|reference" />
+    <attr name="night_alpha" format="float" />
+
+    <attr name="night_textColor" format="color|reference" />
+    <attr name="night_textColorHint" format="color|reference" />
+
+    <attr name="night_src" format="reference" />
+    <!--提示-->
+    <declare-styleable name="TextView">
+        <attr name="night_background" />
+        <attr name="night_alpha" />
+        <attr name="night_textColor" />
+        <attr name="night_textColorHint" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageView">
+        <attr name="night_background" />
+        <attr name="night_alpha" />
+        <attr name="night_src" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearLayout">
+        <attr name="night_background" />
+        <attr name="night_alpha" />
+    </declare-styleable>
+
+    <declare-styleable name="RelativeLayout">
+        <attr name="night_background" />
+        <attr name="night_alpha" />
+    </declare-styleable>
+</resources>

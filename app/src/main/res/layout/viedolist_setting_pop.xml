@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f8f8f8"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/hs_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/video_list_pop_copylink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_cl" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/copy_link"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_email" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Email"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_google" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Google"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_wa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_wa" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/WhatsApp"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_sms" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/SMS"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_twitter" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Twitter"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_fb" />
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Facebook"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#7fe4e7f0" />
+
+    <HorizontalScrollView
+        android:id="@+id/hs_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/video_list_pop_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_report" />
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/report"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_list_pop_uninter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_uninterested" />
+
+                <com.onemena.widght.HelveRomanTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Uninterested"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:id="@+id/video_list_pop_dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/details_setting_dislike"
+                        android:id="@+id/iv_dislike"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        android:textColor="@color/textcolor_222328"
+                        android:textSize="10dp"
+                        android:id="@+id/tv_dislike"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dislike_image_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/details_reduce_add"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/dislike_image_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/details_cacel"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/video_list_pop_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/details_setting_like"
+                        android:id="@+id/iv_like"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        android:textColor="@color/textcolor_222328"
+                        android:textSize="10dp"
+                        android:id="@+id/tv_like"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/like_image_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/details_add"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/like_image_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/details_cacel"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/video_list_pop_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/details_more_save"
+                    android:id="@+id/img_save"/>
+
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/save"
+                    android:textColor="@color/textcolor_222328"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/view_diver_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7fe4e7f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center">
+
+        <com.onemena.widght.HelveBoldTextView
+            android:id="@+id/tv_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_item_click_selector"
+            android:gravity="center"
+            android:text="إلغاء"
+            android:textColor="@color/textcolor_64697b"
+            android:textSize="20dp" />
+        <!--android:background="@drawable/home_item_click_selector"-->
+    </LinearLayout>
+
+</LinearLayout>

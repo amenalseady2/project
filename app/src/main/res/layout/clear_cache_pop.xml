@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.onemena.widght.HelveBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:text="@string/pop_clean_title" />
+
+    <com.onemena.widght.HelveRomanTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#9FA4BA"
+        android:text="@string/pop_clean_des" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right">
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_cancel"
+            android:textColor="#64697B"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/pop_clean_btn_cancel" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_commit"
+            android:textColor="#3E84E0"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop_clean_btn_sure" />
+    </LinearLayout>
+
+</LinearLayout>

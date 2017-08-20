@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_search_news"
+        android:layout_width="match_parent"
+        android:layout_height="208px"
+        app:layout_auto_basewidth="height">
+
+
+        <com.onemena.widght.HelveBoldTextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="30px"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="4px"
+            android:lines="2"
+            android:textColor="@color/black_222222"
+            android:textSize="30px"
+            app:layout_auto_basewidth="marginTop"
+            app:night_textColor="@color/nighttxt_707070" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_from"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginRight="32px"
+            app:layout_auto_basewidth="height"
+            fresco:placeholderImage="@mipmap/home_from"
+            fresco:roundAsCircle="true" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28px"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@id/iv_from"
+            android:text="كووورة"
+            android:textColor="@color/gray_999999"
+            android:textSize="24px"
+            app:layout_auto_basewidth="marginBottom"
+            app:night_textColor="@color/nighttxt_707070" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:background="@color/gray_e3e3e3"
+            app:night_background="@color/txt_464646" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

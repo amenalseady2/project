@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nightbg_1b1b1b">
+    <LinearLayout
+        android:background="@color/nightbg_252525"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:visibility="gone"
+            android:src="@mipmap/details_navbar_more"
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title_newsdetail"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:src="@mipmap/details_navbar_back_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.onemena.app.refresh.PullToRefreshLayout
+            android:id="@+id/refreashLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <include layout="@layout/refresh_head" />
+
+            <com.onemena.app.refresh.PullableListView
+                android:background="@color/nightbg_1b1b1b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/common_list"
+                style="@style/ListView"
+                android:divider="@null"
+                />
+            <include layout="@layout/load_more" />
+
+        </com.onemena.app.refresh.PullToRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:id="@+id/lay_comment_nodata"
+            android:background="@color/nightbg_1b1b1b">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/art_t_nodata"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:background="@drawable/common_night_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <com.onemena.widght.HelveBoldTextView
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:lines="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text=" بإعادة نشر بيانات صحفية دون التفرقة بين التسو"
+                        android:textSize="12dp"
+                        android:id="@+id/txt_articl_yuan_nodata"
+                        android:textColor="@color/textcolor_707070"/>
+
+                    <com.onemena.widght.HelveRomanTextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/comment_blue_btn_selector_night"
+                        android:text="عرض"
+                        android:gravity="center"
+                        android:textColor="@color/textcolor_707070"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/nightbg_1b1b1b"
+               >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/detailscommentlist_img_night">
+                </ImageView>
+                <com.onemena.widght.NotoRegularTextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="لا يوجد تعليقات حالياً"
+                    android:textColor="@color/textcolor_707070"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/txt_464646"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        >
+        <com.onemena.widght.NotoRegularTextView
+            android:id="@+id/tv_comment"
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:hint="شارك برأيك…"
+            android:paddingRight="20px"
+            android:textColor="@color/textcolor_707070"
+            android:background="@drawable/common_white_btn_selector_night"
+            />
+
+    </LinearLayout>
+</LinearLayout>

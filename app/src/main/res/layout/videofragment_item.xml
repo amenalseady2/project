@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.onemena.app.refresh.PullToRefreshLayout
+        android:id="@+id/refreashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <include layout="@layout/refresh_head" />
+
+
+        <com.onemena.app.refresh.PullableListView
+            android:id="@+id/pullable_listview_video"
+            style="@style/ListView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+
+            layout="@layout/load_more" />
+
+    </com.onemena.app.refresh.PullToRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/video_rl_unsuccess"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/ll_unsuccess"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_video_not_data"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <!-- <TextView
+                 android:id="@+id/tv_retry"
+                 android:text="tv_retry"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/common_textbg_blue_click_selector"
+                 android:textColor="@color/blue_text_color_selector"
+                 android:textSize="20sp"
+                 android:gravity="center"
+                 android:layout_width="150dp"
+                 android:layout_height="32dp" />  -->
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/txt_video_not_data"
+                android:text="@string/点击加载数据"
+                android:layout_marginTop="12dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="8dp"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_news_one_image">
+
+    <ImageView
+        android:id="@+id/show_pop_iv_1"
+        android:layout_width="66dp"
+        android:layout_height="26dp"
+        android:padding="5dp"
+        android:src="@mipmap/home_delete_2" />
+    <TextView
+        android:id="@+id/txt_zan_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8px"
+        android:gravity="center_vertical"
+        android:text="34k"
+        android:textColor="@color/textcolor_a1a6bb"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txt_time_1_1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24px"
+        android:gravity="right"
+        android:text="البيت"
+        android:textColor="@color/textcolor_a1a6bb"
+        android:textSize="12sp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/img_like_1_1"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24px"
+        android:visibility="gone"
+        android:src="@mipmap/home_list_comment" />
+
+
+    <com.onemena.widght.NotoRegularTextView
+        android:id="@+id/txt_com_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8px"
+        android:text="منصب"
+        android:textColor="@color/textcolor_a1a6bb"
+        android:textSize="12sp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_com_1_1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@mipmap/home_from"
+        android:visibility="invisible"
+        fresco:roundAsCircle="true" />
+
+    <ImageView
+        android:id="@+id/iv_top_1_1"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:src="@mipmap/home_list_top"
+        android:layout_marginRight="14dp"/>
+
+    <TextView
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lcoal_diver_1_1"
+        android:visibility="gone"/>
+
+</LinearLayout>

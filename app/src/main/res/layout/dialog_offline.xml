@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="750px"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right|center_vertical">
+
+            <com.onemena.widght.HelveRomanTextView
+                android:id="@+id/tv_categorie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/downloading"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/txt_3e84e0"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/downlading_pull_refresh" />
+
+            <com.onemena.widght.HelveRomanTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="@string/downloading"
+                android:textColor="@color/textcolor_64697b"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/my_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:max="100"
+            android:progress="98"
+            android:progressDrawable="@drawable/progressbar_color" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_light2_grey" />
+
+        <com.onemena.widght.HelveRomanTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/download"
+            android:textColor="@color/textcolor_64697b"
+            android:textSize="20dp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

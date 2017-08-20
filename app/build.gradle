@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'io.fabric'
+
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        applicationId "com.arabsada.news"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 35
+        versionName "1.4.02"
+        multiDexEnabled true
+
+        manifestPlaceholders = [onesignal_app_id  : "80c8a0c1-07ff-40c1-a764-638cad8750b5",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "534139034128"]
+    }
+
+//    useLibrary 'org.apache.http.legacy'
+//    4ea52b5
+
+    signingConfigs {
+        news {
+            storeFile file('src/main/java/news.jks')
+            storePassword '123456'
+            keyAlias 'news_'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+
+        same {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.news
+        }
+
+        release {
+            initWith same
+
+            minifyEnabled RELEASE_MINIFY_ENABLED as boolean
+            zipAlignEnabled RELEASE_MINIFY_ENABLED as boolean
+            shrinkResources RELEASE_MINIFY_ENABLED as boolean
+
+            buildConfigField "boolean", "IS_DEBUG", "false"
+            buildConfigField "String", "HOST", "\"http://api.anawin.com\""
+        }
+        debug {
+            minifyEnabled DEBUG_MINIFY_ENABLED as boolean
+            zipAlignEnabled DEBUG_MINIFY_ENABLED as boolean
+            shrinkResources DEBUG_MINIFY_ENABLED as boolean
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.news
+
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "HOST", "\"http://api.test.arabsada.com\""
+
+        }
+    }
+
+    productFlavors {
+        anawin {
+//            applicationId "com.wekoora.football"
+            resValue("string", "local_everyday_notii", "${defaultConfig.applicationId}.LOCAL_EVERYDAY_NOTI")
+        }
+    }
+
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+            universalApk false
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def fileName = "${variant.productFlavors.name}-build${defaultConfig.versionCode}-version${defaultConfig.versionName}-${variant.buildType.name}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.facebook.fresco:animated-gif:0.12.0'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-crash:9.8.0'
+    compile 'org.apache.commons:commons-lang3:3.5'
+    compile('com.facebook.android:facebook-android-sdk:4.8.0') {
+        exclude group: 'com.parse.bolts', module: 'bolts-android'
+    }
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    compile 'com.google.android.gms:play-services-plus:9.8.0'
+    compile 'de.greenrobot:greendao:1.3.7'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'org.jsoup:jsoup:1.7.1'
+    compile 'com.voler:saber-annotation:1.1.1'
+    apt 'com.voler:saber-compiler:1.1.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    compile('com.twitter.sdk.android:twitter:2.2.0@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:tweet-composer:2.2.0@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:answers:1.3.13@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile project(':nightModelLibrary')
+    compile project(':oneMenaExternalLibrary')
+    compile 'io.branch.sdk.android:library:2.+'
+}
+apply plugin: 'com.google.gms.google-services'

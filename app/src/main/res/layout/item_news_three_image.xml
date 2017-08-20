@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/style3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+
+    <com.onemena.widght.HelveBoldTextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:text=" تتضاءل عمليات التحكم بالجودة. تقوم عشرات المدونات (كما الإعلام المطبوع) ببساطة بإعادة نشر بيانات"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image3_1"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/default_home_list_img"
+            fresco:placeholderImageScaleType="focusCrop" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image3_2"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/default_home_list_img"
+            fresco:placeholderImageScaleType="focusCrop" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image3_3"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/default_home_list_img"
+            fresco:placeholderImageScaleType="focusCrop" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/show_pop_iv_3"
+            android:layout_width="66dp"
+            android:layout_height="26dp"
+            android:padding="5dp"
+            android:src="@mipmap/home_delete_2" />
+        <TextView
+            android:id="@+id/txt_zan_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8px"
+            android:gravity="center_vertical"
+            android:text="34k"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_time_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+            android:text="البيت"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:textSize="12sp" />
+
+
+
+
+        <ImageView
+            android:id="@+id/img_like_3"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+            android:visibility="gone"
+            android:src="@mipmap/home_list_comment" />
+
+
+        <com.onemena.widght.NotoRegularTextView
+            android:id="@+id/txt_com_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8px"
+            android:text="منصب"
+            android:textColor="@color/textcolor_a1a6bb"
+            android:textSize="12sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_com_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/home_from"
+            android:visibility="invisible"
+            fresco:roundAsCircle="true" />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_top_3"
+            android:layout_width="24dp"
+            android:layout_height="14dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/home_list_top" />
+
+        <TextView
+            android:id="@+id/lcoal_diver_3"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/three_img_diver"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E3E3E3"
+        android:layout_height="2px"
+        />
+</LinearLayout>

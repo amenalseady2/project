@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="52dp">
+    <com.onemena.widght.HelveRomanTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="المتداولة"
+        android:textColor="@color/textcolor_222328"
+        android:gravity="center|right"
+        android:textSize="17dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/txt_feedback"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/arrow"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/img_arrow"/>
+    <com.onemena.widght.HelveRomanTextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E7F0"
+        android:id="@+id/txt_div_feed"
+        />
+
+
+</RelativeLayout>
